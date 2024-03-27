@@ -1,15 +1,18 @@
 from turtle import *
 import random
 
-speed(-1)
-r = 20
+
+speed(0)
+r = 3
+screen = Screen()
+screen.delay(0)
 
 pu()
 goto(-200,450)
 write("prikaz izotopov bakra:", True,"left", ("Arial", 30, "normal")) 
 goto(-400,400)
-for i in range(20):
-    for k in range(20):
+for i in range(round(400/r)):
+    for k in range(round(400/r)):
         if random.randint(1,1000)<692:
             fillcolor("gold")
         else:

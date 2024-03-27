@@ -2,8 +2,8 @@ from turtle import *
 import random
 from pygame import mixer
 
-speed(-1)
-r = 5
+speed(0)
+r = 3
 screen = Screen()
 screen.delay(0)
 
@@ -16,9 +16,9 @@ mixer.music.set_pos(50)
 pu()
 goto(-200,450)
 write("prikaz izotopov bakra:", True,"left", ("Arial", 30, "normal")) 
-goto(-500,400)
-for i in range(100):
-    for k in range(100):
+goto(-400,400)
+for i in range(round(400/r)):
+    for k in range(round(400/r)):
         if random.randint(1,1000)<692:
             fillcolor("gold")
         else:
@@ -29,7 +29,7 @@ for i in range(100):
         pu() 
         fd(2*r) 
         end_fill()
-    goto(-500, 400-(i+1)*2*r)  
+    goto(-400, 400-(i+1)*2*r)  
 
 done()
 
