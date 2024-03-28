@@ -2,7 +2,7 @@ from turtle import *
 import random
 from pygame import mixer
 
-r = 4
+r = 5
 ime_elementa = "x"
 list_of_percentages = [ 1250, 1250, 1250, 1250, 1250, 1250, 1250, 1250,]
 
@@ -29,9 +29,9 @@ def alg(isotopes):
 pu()
 goto(-225,450)
 write(f"prikaz izotopov elementa {ime_elementa}:", True,"left", ("Arial", 30, "normal")) 
-goto(-400,400)
+goto(-800,350)
 for i in range(round(400/r)):
-    for k in range(round(400/r)):
+    for k in range(round(800/r)):
         fillcolor(alg(list_of_percentages))
         begin_fill()
         pd()
@@ -39,7 +39,7 @@ for i in range(round(400/r)):
         pu() 
         fd(2*r) 
         end_fill()
-    goto(-400, 400-(i+1)*2*r) 
+    goto(-800, 350-(i+1)*2*r) 
 
 
 
