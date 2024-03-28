@@ -2,8 +2,11 @@ from turtle import *
 import random
 from pygame import mixer
 
-speed(0)
 r = 4
+ime_elementa = "x"
+list_of_percentages = [ 1250, 1250, 1250, 1250, 1250, 1250, 1250, 1250,]
+
+speed(0)
 screen = Screen()
 screen.delay(0)
 
@@ -14,7 +17,6 @@ mixer.music.play()
 mixer.music.set_pos(50)
 
 
-list_of_percentages = [ 1250, 1250, 1250, 1250, 1250, 1250, 1250, 1250,]
 
 colors = ["yellow", "pink", "red", "purple", "green", "light blue", "silver", "blue"]
 
@@ -25,8 +27,8 @@ def alg(isotopes):
             return (colors[i])
         
 pu()
-goto(-200,450)
-write("prikaz izotopov bakra:", True,"left", ("Arial", 30, "normal")) 
+goto(-225,450)
+write(f"prikaz izotopov elementa {ime_elementa}:", True,"left", ("Arial", 30, "normal")) 
 goto(-400,400)
 for i in range(round(400/r)):
     for k in range(round(400/r)):
