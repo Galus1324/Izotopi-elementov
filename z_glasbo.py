@@ -9,14 +9,14 @@ screen.delay(0)
 
 mixer.init()
 mixer.music.load("GasGasGas.mp3")
-mixer.music.set_volume(0.2)
+mixer.music.set_volume(0)
 mixer.music.play()
 mixer.music.set_pos(50)
 
 
-list_of_percentages = [9485, 76, 437, 2,]
+list_of_percentages = [ 1250, 1250, 1250, 1250, 1250, 1250, 1250, 1250,]
 
-colors = ["yellow", "pink", "red", "purple", "green", "gold", "silver", "blue"]
+colors = ["yellow", "pink", "red", "purple", "green", "light blue", "silver", "blue"]
 
 def alg(isotopes):
     random_num = random.randint(1,10000)
