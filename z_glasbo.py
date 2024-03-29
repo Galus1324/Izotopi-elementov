@@ -1,4 +1,4 @@
-from turtle import *
+import turtle
 import random
 from pygame import mixer
 
@@ -6,12 +6,13 @@ r = 5
 ime_elementa = "x"
 list_of_percentages = [ 1250, 1250, 1250, 1250, 1250, 1250, 1250, 1250,]
 
-speed(0)
-screen = Screen()
+turtle.register_shape("car", "car.jpg")
+auto = turtle.Turtle()
+auto.speed(0)
+screen = turtle.Screen()
 screen.delay(0)
-wn = Screen()
-addshape("car-removebg-preview.png")
-
+car = "car.jpg"
+auto.shape("car")
 
 
 mixer.init()
@@ -30,22 +31,22 @@ def alg(isotopes):
         if sum(isotopes[:i+1]) >= random_num:
             return colors[i]
         
-pu()
-goto(-225,450)
-write(f"prikaz izotopov elementa {ime_elementa}:", True,"left", ("Arial", 30, "normal")) 
-goto(-800,350)
+auto.pu()
+auto.goto(-225,450)
+auto.write(f"prikaz izotopov elementa {ime_elementa}:", True,"left", ("Arial", 30, "normal")) 
+auto.goto(-800,350)
 for i in range(round(400/r)):
     for k in range(round(800/r)):
-        fillcolor(alg(list_of_percentages))
-        begin_fill()
-        pd()
-        circle(r)
-        pu() 
-        fd(2*r) 
-        end_fill()
-    goto(-800, 350-(i+1)*2*r) 
+        auto.fillcolor(alg(list_of_percentages))
+        auto.begin_fill()
+        auto.pd()
+        auto.circle(r)
+        auto.pu() 
+        auto.fd(2*r) 
+        auto.end_fill()
+    auto.goto(-800, 350-(i+1)*2*r) 
 
 
 
-done()
+auto.done()
 
