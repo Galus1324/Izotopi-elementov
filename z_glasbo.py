@@ -6,13 +6,12 @@ r = 5
 ime_elementa = "x"
 list_of_percentages = [ 1250, 1250, 1250, 1250, 1250, 1250, 1250, 1250,]
 
-turtle.register_shape("car", "car.jpg")
 auto = turtle.Turtle()
 auto.speed(0)
 screen = turtle.Screen()
+screen.addshape("screenshot_3.png")
 screen.delay(0)
-car = "car.jpg"
-auto.shape("car")
+auto.shape("screenshot_3.png")
 
 
 mixer.init()
