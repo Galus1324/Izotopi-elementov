@@ -9,14 +9,15 @@ list_of_percentages = [ 1250, 1250, 1250, 1250, 1250, 1250, 1250, 1250,]
 auto = turtle.Turtle()
 auto.speed(0)
 screen = turtle.Screen()
-screen.addshape("screenshot_3.png")
+"""screen.addshape("car.jpg")
+auto.shape("car.jpg")"""
 screen.delay(0)
-auto.shape("screenshot_3.png")
+
 
 
 mixer.init()
 mixer.music.load("GasGasGas.mp3")
-mixer.music.set_volume(0)
+mixer.music.set_volume(0.2)
 mixer.music.play()
 mixer.music.set_pos(50)
 
