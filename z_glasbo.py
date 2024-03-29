@@ -9,6 +9,10 @@ list_of_percentages = [ 1250, 1250, 1250, 1250, 1250, 1250, 1250, 1250,]
 speed(0)
 screen = Screen()
 screen.delay(0)
+wn = Screen()
+addshape("car-removebg-preview.png")
+
+
 
 mixer.init()
 mixer.music.load("GasGasGas.mp3")
@@ -24,7 +28,7 @@ def alg(isotopes):
     random_num = random.randint(1,10000)
     for i in range(len(isotopes)):
         if sum(isotopes[:i+1]) >= random_num:
-            return (colors[i])
+            return colors[i]
         
 pu()
 goto(-225,450)
