@@ -2,15 +2,17 @@ import turtle
 import random
 from pygame import mixer
 
-r = 5
+r = 20
 ime_elementa = "x"
 list_of_percentages = [ 1250, 1250, 1250, 1250, 1250, 1250, 1250, 1250,]
 
 auto = turtle.Turtle()
 auto.speed(0)
 screen = turtle.Screen()
-"""screen.addshape("car.jpg")
-auto.shape("car.jpg")"""
+screen.title("prikaz izotopov elementa v naravi")
+screen.addshape("car.gif")
+auto.shape("car.gif")
+auto.shapesize(0.5)
 screen.delay(0)
 
 
@@ -48,5 +50,5 @@ for i in range(round(400/r)):
 
 
 
-auto.done()
+turtle.done()
 
