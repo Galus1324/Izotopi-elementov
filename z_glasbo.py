@@ -12,7 +12,6 @@ screen = turtle.Screen()
 screen.title("prikaz izotopov elementa v naravi")
 screen.addshape("car.gif")
 auto.shape("car.gif")
-auto.shapesize(0.5)
 screen.delay(0)
 
 
